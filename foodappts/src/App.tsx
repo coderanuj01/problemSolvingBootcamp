@@ -1,7 +1,5 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Template from "./components/template/template";
+import Template from "./components/template/Template";
 
 function App() {
   return (

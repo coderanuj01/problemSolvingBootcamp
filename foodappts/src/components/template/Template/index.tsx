@@ -1,7 +1,7 @@
 import React from "react";
-import Body from "../organisms/Body";
-import Footer from "../organisms/Footer";
-import Header from "../organisms/Header";
+import Body from "../../organisms/Body";
+import Footer from "../../organisms/Footer";
+import Header from "../../organisms/Header";
 
 function Template() {
   return (

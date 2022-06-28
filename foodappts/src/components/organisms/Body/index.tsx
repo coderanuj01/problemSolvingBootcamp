@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import CSS from "csstype";
-import RestaurantCard from "../molecules/RestaurantCard";
+import RestaurantCard from "../../molecules/RestaurantCard";
 
 const bodyDivision: CSS.Properties = {
   display: "flex",
@@ -34,12 +33,6 @@ const mainBody = {
 const buttonText = {
   fontSize: "20px",
   color: "black",
-};
-
-const buttonTextRaised = {
-  fontSize: "20px",
-  color: "black",
-  backgroundColor: "#e9fa6b",
 };
 
 function Body() {

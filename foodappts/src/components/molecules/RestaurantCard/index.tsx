@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import FoodData from "../../data/foodData";
-import Menu from "./Menu";
+import FoodData from "../../../data/foodData";
+import Menu from "../Menu";
 
 const restaurantCardStyle = {
   width: "230px",

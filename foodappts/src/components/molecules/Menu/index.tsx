@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import FoodData from "../../data/foodData";
-import Info from "./Info";
+import FoodData from "../../../data/foodData";
+import Info from "../Info";
 
 type menuProps = {
   id: number;
@@ -31,7 +31,7 @@ function Menu(props: menuProps) {
   const [total, setTotal] = useState(0);
   return (
     <>
-      {next == 0 ? (
+      {next === 0 ? (
         <>
           <div style={outerStyle}>
             {FoodData[props.id].Menu.map((item) => (
