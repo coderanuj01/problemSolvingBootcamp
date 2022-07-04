@@ -2,9 +2,9 @@ package binarysearch;
 
 public class BinarySearch {
 
-    public static int binary(int arr[],int size,int ele){
+    public static int binary(int listOfNumber[],int sizeOfList,int elementToSearch){
 
-        int high = size-1;
+        int high = sizeOfList-1;
         int low = 0;
 
         int mid;
@@ -12,9 +12,9 @@ public class BinarySearch {
         while(high >= low){
             mid = (high + low)/2;
 
-            if(arr[mid] > ele){
+            if(listOfNumber[mid] > elementToSearch){
                 high = mid-1;
-            }else if(arr[mid] < ele){
+            }else if(listOfNumber[mid] < elementToSearch){
                 low = mid + 1;
             }else{
                 return mid;

@@ -1,18 +1,18 @@
 package greedy;
 
 public class Implementation {
-    static void printMaxActivities(Task arr[],int n){
-        Comparison cmp = new Comparison();
-        cmp.compare(arr, n);
+    static void printMaxActivities(Task listOfTask[],int numerOfTask){
+
+        Comparison.compare(listOfTask, numerOfTask);
         System.out.println("these tasks are selected : ");
 
-        int i=0;
-        System.out.println( " ( " + arr[i].start + " " + arr[i].finish + " ),");
+        int addingIndex=0;
+        System.out.println( " ( " + listOfTask[addingIndex].start + " " + listOfTask[addingIndex].finish + " ),");
 
-        for(int j=1;j<n;j++){
-            if(arr[j].start >= arr[i].finish){
-                System.out.println(" ( " + arr[j].start + " " + arr[j].finish + " ),");
-                i = j;
+        for(int index=1;index<numerOfTask;index++){
+            if(listOfTask[index].start >= listOfTask[addingIndex].finish){
+                System.out.println(" ( " + listOfTask[index].start + " " + listOfTask[index].finish + " ),");
+                addingIndex = index;
             }
         }
     }

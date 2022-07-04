@@ -2,11 +2,11 @@ package highest;
 
 public class Highest {
 
-    public static int high(int arr[],int size){
-        int high = arr[0];
-        for(int i=1;i<size;i++){
-            if(high < arr[i]){
-                high = arr[i];
+    public static int high(int listOfNumber[],int sizeOfList){
+        int high = listOfNumber[0];
+        for(int index=1;index<sizeOfList;index++){
+            if(high < listOfNumber[index]){
+                high = listOfNumber[index];
             }
         }
         return high;
