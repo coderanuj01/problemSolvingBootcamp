@@ -1,6 +1,6 @@
 package highest;
 
-public class Highest {
+public class HighestElement {
 
     public static int high(int listOfNumber[],int sizeOfList){
         int high = listOfNumber[0];

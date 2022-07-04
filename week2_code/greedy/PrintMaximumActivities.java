@@ -1,6 +1,6 @@
 package greedy;
 
-public class Implementation {
+public class PrintMaximumActivities {
     static void printMaxActivities(Task listOfTask[],int numerOfTask){
 
         Comparison.compare(listOfTask, numerOfTask);

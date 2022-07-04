@@ -3,7 +3,7 @@ package greedy;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Comparison {
+public class SortingComparison {
     static void compare(Task arr[],int n){
         Arrays.sort(arr, new Comparator<Task>() {
             @Override
