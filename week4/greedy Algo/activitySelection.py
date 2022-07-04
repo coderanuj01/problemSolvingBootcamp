@@ -1,34 +1,34 @@
-def activitySelection(s , f): 
-  n = len(f) 
+def activitySelection(startList , finishList): 
+  numberOfTasks = len(finishList) 
   temp_start = 0
   temp_finish = 0
 
-  for i in range(1,n):
-    for j in range(0,n-1):
-      if(f[j] > f[j+1]):
-        temp_start = s[j]
-        temp_finish = f[j]
+  for outerIndex in range(1,numberOfTasks):
+    for index in range(0,numberOfTasks-1):
+      if(finishList[index] > finishList[index+1]):
+        temp_start = startList[index]
+        temp_finish = finishList[index]
 
-        f[j] = f[j+1]
-        s[j] = s[j+1]
+        finishList[index] = finishList[index+1]
+        startList[index] = startList[index+1]
 
-        f[j+1] = temp_finish
-        s[j+1] = temp_start
+        finishList[index+1] = temp_finish
+        startList[index+1] = temp_start
   
 
   print("\nMaximum Selected Activities")
   
-  i = 0
-  print(s[i], f[i]), 
+  indexToPrint = 0
+  print(startList[indexToPrint], finishList[indexToPrint]), 
 
-  for j in range(n): 
+  for ListIndex in range(numberOfTasks): 
 
-    if s[j] >= f[i]: 
-      print(s[j], f[j]), 
-      i = j 
+    if startList[ListIndex] >= finishList[indexToPrint]: 
+      print(startList[ListIndex], finishList[ListIndex]), 
+      indexToPrint = ListIndex
 
 #driver code 
-start = [5, 1, 0, 3, 5, 8] 
-finish = [9, 5, 6, 5, 7, 9] 
+startList = [5, 1, 0, 3, 5, 8] 
+finishList = [9, 5, 6, 5, 7, 9] 
 
-activitySelection(start , finish) 
+activitySelection(startList , finishList) 
